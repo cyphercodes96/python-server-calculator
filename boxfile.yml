@@ -1,0 +1,34 @@
+run.config:
+  engine: python
+  engine.config:
+    runtime: python-3.5
+
+  # add extra packages
+  extra_packages:
+    - nginx
+    - py35-google-cloud-sdk
+    - mysql-client-5.7
+
+  extra_path_dirs:
+    - /data/py35-google-cloud-sdk/bin
+
+  extra_steps:
+    - mkdir -p /app/var/log
+    - chmod u+w /app/var/log
+
+deploy.config:
+  before_live:
+    web.main:
+      - 'flask db upgrade'
+
+# add a database
+data.db:
+  image: nanobox/mysql:5.7
+
+# add a web component and give it a "start" command
+web.main:
+  start:
+    nginx: nginx -c /app/etc/nginx.conf
+    flask: gunicorn -c /app/etc/gunicorn.py app:app
+  log_watch:
+    flask[log]: /app/var/log/t2calc.log
