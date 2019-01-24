@@ -32,8 +32,3 @@ This is so everybody can stay in sync with the database and to keep a commit "hi
 ### Automatic Deployement and Tests ###
 This repo is connected to Semaphore for automatic deployment, so please always run the tests before a git push.
 If you don't want to build, test and deploy your push automatically, just add the string "[ci skip]" inside your commit message.
-
-Running the tests locally:  
-1. `nanobox run /app/src/test/init_tests.sh` - Will run flask drop_tables && flask db upgrade && flask sample_data, to make sure we have an up-to-date and initilized database.  
-2. `nanobox run python app.py` - The Tavern api tests need a server up and running  
-3. [in another terminal] `nanobox run pytest -v --tb=short -p no:logging --tavern-beta-new-traceback`  
