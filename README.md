@@ -85,3 +85,6 @@ If you don't want to build, test and deploy your push automatically, just add th
 
 # Live Deployed API: #
 https://personal-calc-core.nanoapp.io/api/v1/
+
+# Live CI / CD Using Semaphore: #
+https://www.useloom.com/share/5b4f86aff162448ebc8d73cb80838558
