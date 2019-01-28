@@ -21,11 +21,17 @@ To add the `DNS Alias`, run:
 As for the environment variables, you'll need the following:
 
   FLASK_APP = app.py
+  
   JWT_SECRET_KEY = 3zpqvDJ22jkHPPPYpreD62k1RAc
+  
   DEBUG = False
+  
   MODE = DEV
+  
   RESETPASS_SALT = jVdayk8WACSa123sS
+  
   RESETPASS_SECRET_KEY = wUUDsPKE69PVVBJuekbN5KT
+  
 
 SALTS && KEYS can be changed however needed.
 
