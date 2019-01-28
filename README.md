@@ -4,8 +4,6 @@ Ensure to download `nanobox` which also requires `docker`:
 
 https://docs.nanobox.io/install/
 
-Run `nanobox start` inside the root directory of the application.
-
 Nanobox allows us to run our application in two different environments:
 
 # Development Environment: #
@@ -32,6 +30,10 @@ SALTS && KEYS can be changed however needed.
 
 Run: `nanobox evar add local FLASK_APP=app.py JWT_SECRET_KEY=3zpqvDJ22jkHPPPYpreD62k1RAc DEBUG=False MODE=DEV RESETPASS_SALT=jVdayk8WACSa123sS RESETPASS_SECRET_KEY=wUUDsPKE69PVVBJuekbN5KT'
 
+To serve the application under `development` environment, run:
+
+`nanobox run python app.py` # <--- project root directory
+
 # Dry-run Environment: #
 
 You'll be required to add a `DNS Alias` && set up `environment variables` to properly run and access the API.
@@ -54,6 +56,10 @@ As for the environment variables, you'll need the following:
 SALTS && KEYS can be changed however needed
 
 Run: `nanobox evar add dry-run FLASK_APP=app.py JWT_SECRET_KEY=3zpqvDJ22jkHPPPYpreD62k1RAc DEBUG=False MODE=DEV RESETPASS_SALT=jVdayk8WACSa123sS RESETPASS_SECRET_KEY=wUUDsPKE69PVVBJuekbN5KT'
+
+To serve the application under `Dry-Run` environment, run:
+
+`nanobox deploy dry-run` # <--- project root directory
 
 
 Use the `flask` command to interact with the application, which requires the
