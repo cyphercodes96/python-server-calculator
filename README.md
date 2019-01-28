@@ -19,6 +19,7 @@ To add the `DNS Alias`, run:
 `nanobox dns add local flask.local` # <--- The API will run under "http://`DNS Alias`:5000/api/v1"
 
 As for the environment variables, you'll need the following:
+
   FLASK_APP = app.py
   JWT_SECRET_KEY = 3zpqvDJ22jkHPPPYpreD62k1RAc
   DEBUG = False
@@ -28,7 +29,7 @@ As for the environment variables, you'll need the following:
 
 SALTS && KEYS can be changed however needed.
 
-Run: `nanobox evar add local FLASK_APP=app.py JWT_SECRET_KEY=3zpqvDJ22jkHPPPYpreD62k1RAc DEBUG=False MODE=DEV RESETPASS_SALT=jVdayk8WACSa123sS RESETPASS_SECRET_KEY=wUUDsPKE69PVVBJuekbN5KT'
+Run: `nanobox evar add local FLASK_APP=app.py JWT_SECRET_KEY=3zpqvDJ22jkHPPPYpreD62k1RAc DEBUG=False MODE=DEV RESETPASS_SALT=jVdayk8WACSa123sS RESETPASS_SECRET_KEY=wUUDsPKE69PVVBJuekbN5KT`
 
 To serve the application under `development` environment, run:
 
