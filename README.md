@@ -96,7 +96,7 @@ This is so everybody can stay in sync with the database and to keep a commit "hi
 This repo is connected to Semaphore for automatic deployment, so please always run the tests before a git push.
 If you don't want to build, test and deploy your push automatically, just add the string "[ci skip]" inside your commit message.
 
-# Live Deployed API: #
+# Live Deployed API ( SHUT DOWN / NOT WORKING ): #
 https://personal-calc-core.nanoapp.io/api/v1/
 
 # Live CI / CD Using Semaphore: #
