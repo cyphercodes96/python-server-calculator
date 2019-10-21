@@ -64,5 +64,5 @@ stevedore==1.29.0
 tavern==0.17.2
 ts==0.4.3
 urllib3==1.23
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 WTForms==2.1
