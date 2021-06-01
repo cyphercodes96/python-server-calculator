@@ -63,6 +63,6 @@ SQLAlchemy==1.1.14
 stevedore==1.29.0
 tavern==0.17.2
 ts==0.4.3
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.12.2
 WTForms==2.1
